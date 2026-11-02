@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased
+## v1.21.0 (2026-11-02)
+
+本次发布 tag：根 `v1.21.0` 与全部 10 个 contrib 模块版本对齐——
+`contrib/{zap,watermill,watermill-kafka,telemetry,schedule,registry,registry-redis,consul,cluster,cluster-redis}/v1.21.0`。
+两项实质变更（见下）：①仓库级模块路径迁移（`github.com/lynx-go/lynx` → `github.com/lynxland/lynx`，破坏性）——根与全部 contrib 均仅路径变化、API 面零变化，本版是新模块路径的首个可拉取版本（旧版本 go.mod 仍声明旧路径）；②Go 1.26.9 + `x/net` v0.60.0 依赖漏洞修复（9 个模块 go.mod 侧，无代码变更）。随批对齐版本与模块 require。
 
 ### 破坏性变更：模块路径随 GitHub 机构更名迁移——`github.com/lynx-go/lynx` → `github.com/lynxland/lynx`
 

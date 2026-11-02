@@ -10,9 +10,9 @@ replace (
 
 require (
 	github.com/hashicorp/consul/api v1.34.4
-	github.com/lynxland/lynx v1.20.0
-	github.com/lynxland/lynx/contrib/cluster v1.20.0
-	github.com/lynxland/lynx/contrib/registry v1.20.0
+	github.com/lynxland/lynx v1.21.0
+	github.com/lynxland/lynx/contrib/cluster v1.21.0
+	github.com/lynxland/lynx/contrib/registry v1.21.0
 	github.com/spf13/viper v1.21.0
 )
 

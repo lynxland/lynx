@@ -5,7 +5,7 @@ go 1.26.5
 replace github.com/lynxland/lynx => ../../
 
 require (
-	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx v1.21.0
 	github.com/prometheus/client_golang v1.24.1
 	github.com/spf13/viper v1.21.0
 	go.opentelemetry.io/contrib/instrumentation/runtime v0.67.0

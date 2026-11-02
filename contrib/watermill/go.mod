@@ -7,7 +7,7 @@ replace github.com/lynxland/lynx => ../../
 require (
 	github.com/ThreeDotsLabs/watermill v1.5.2
 	github.com/google/uuid v1.6.0
-	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx v1.21.0
 	github.com/spf13/viper v1.21.0
 )
 
@@ -33,6 +33,6 @@ require (
 	go.opentelemetry.io/otel/metric v1.45.0 // indirect
 	go.opentelemetry.io/otel/trace v1.45.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/text v0.41.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+	golang.org/x/text v0.42.0 // indirect
 )

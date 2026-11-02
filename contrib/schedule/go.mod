@@ -8,8 +8,8 @@ replace (
 )
 
 require (
-	github.com/lynxland/lynx v1.20.0
-	github.com/lynxland/lynx/contrib/cluster v1.20.0
+	github.com/lynxland/lynx v1.21.0
+	github.com/lynxland/lynx/contrib/cluster v1.21.0
 	github.com/robfig/cron/v3 v3.0.1
 )
 

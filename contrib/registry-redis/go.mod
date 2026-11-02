@@ -9,8 +9,8 @@ replace (
 
 require (
 	github.com/alicebob/miniredis/v2 v2.40.0
-	github.com/lynxland/lynx v1.20.0
-	github.com/lynxland/lynx/contrib/registry v1.20.0
+	github.com/lynxland/lynx v1.21.0
+	github.com/lynxland/lynx/contrib/registry v1.21.0
 	github.com/redis/go-redis/v9 v9.22.0
 	github.com/spf13/viper v1.21.0
 )
