@@ -8,9 +8,9 @@
 # 发布流程见 RELEASE.md。
 
 [tools]
-go = "1.26.9"              # ≥ go.mod/go.work 的 1.26.5 指令；1.26.9 修复
-                           # stdlib 漏洞（net/http ×7、net/textproto、crypto/tls、
-                           # html/template ×2，共 11 项，govulncheck 驱动升级）
+go = "1.26.10"             # ≥ go.mod/go.work 的 1.26.5 指令；1.26.10 修复
+                           # crypto/x509 GO-2026-6809（1.26.9 批次 11 项之上的
+                           # 新公告，govulncheck 驱动升级）
 golangci-lint = "2.12.2"   # 与 CI 原钉版一致
 
 [task_config]
