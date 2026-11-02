@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	consul "github.com/lynx-go/lynx/contrib/consul"
-	"github.com/lynx-go/lynx/contrib/registry"
+	consul "github.com/lynxland/lynx/contrib/consul"
+	"github.com/lynxland/lynx/contrib/registry"
 )
 
 // TestIntegrationSmoke 对真实 Consul（localhost:8500）做冒烟：

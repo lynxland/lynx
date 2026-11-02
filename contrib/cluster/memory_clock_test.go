@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 // TestMemoryClaimTTLBoundary：ttl-ε 仍占用；恰好 ttl 过期后可重占。

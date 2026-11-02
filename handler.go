@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // EventHandler 是业务侧对「一个类型化订阅」的完整声明：主题、handler 名、

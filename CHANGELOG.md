@@ -2,6 +2,28 @@
 
 ## Unreleased
 
+### 破坏性变更：模块路径随 GitHub 机构更名迁移——`github.com/lynx-go/lynx` → `github.com/lynxland/lynx`
+
+- **背景**：GitHub 机构 `lynx-go` 更名 `lynxland`，根模块、全部 10 个 contrib
+  模块与 `_examples` 的 Go 模块路径随之变更（`github.com/lynx-go/lynx/...` →
+  `github.com/lynxland/lynx/...`）。API 面零变化，纯导入路径迁移。
+- **迁移**：存量代码把 `github.com/lynx-go/lynx` 机械替换为
+  `github.com/lynxland/lynx`（go.mod require 与全部 import，含 contrib 子路径）
+  即完成迁移。ldflags 注入目标同步变化：`-X github.com/lynx-go/lynx/buildinfo.Version=…`
+  → `-X github.com/lynxland/lynx/buildinfo.Version=…`（commit/date 同理，构建脚本务必同批更新）。
+- **发布时序注意**：旧版本（≤ v1.20.0）在新路径下不可解析——已发布版本的
+  go.mod 声明的仍是旧路径，`go mod tidy` 会报 `module declares its path as`。
+  新路径需待本次更名随版发布（根 + contrib 全模块对齐打 tag）后方可拉取；
+  在那之前存量用户维持旧路径（GitHub redirect 长期有效）。
+- **`lynx-go/commands` 另行处理**：commands 仓库已随机构更名
+  （`github.com/lynxland/commands`），但其 Go 模块路径在新版发布前仍为
+  `github.com/lynx-go/commands`——本仓库 `_examples` 的 require 与导入暂留
+  旧路径，待 commands 以新路径发版后随批迁移；`docs/02-quick-start.md` 的
+  仓库链接已指向新地址。
+- 本仓库内代码、测试、活文档（README/CLAUDE/RELEASE/docs 0x/contrib README）
+  与 12 份 LICENSE 版权行已同步；历史发布条目与设计决策记录
+  （`docs/design-*.md`）按既定政策保留旧名不改。
+
 ### 修复：Go 1.26.9 + x/net v0.60.0——关闭 govulncheck 11 项 stdlib 与 4 项 x/net 可达漏洞
 
 CI `govulncheck` job 转红（同批 test / lint 全绿，唯一失败 job；v1.18.0–v1.20.0

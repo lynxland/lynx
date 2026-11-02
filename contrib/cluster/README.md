@@ -1,6 +1,6 @@
 # cluster
 
-模块路径：`github.com/lynx-go/lynx/contrib/cluster`
+模块路径：`github.com/lynxland/lynx/contrib/cluster`
 
 进程间协调（跨进程互斥、选主、单实例运行）的纯接口与配方包：定义 `Coordinator` 端口与 `TryOnce` / `Campaign` / `Singleton` 三个上层配方，不含任何后端依赖。生产适配器在 [contrib/consul](../consul/README.md)（Consul KV + Session）与 [contrib/cluster-redis](../cluster-redis/README.md)（Redis SET NX）。
 
@@ -17,7 +17,7 @@
 ## 快速开始
 
 ```go
-import "github.com/lynx-go/lynx/contrib/cluster"
+import "github.com/lynxland/lynx/contrib/cluster"
 
 coord := cluster.NewMemory() // 测试；生产用 consul / cluster-redis 适配器
 

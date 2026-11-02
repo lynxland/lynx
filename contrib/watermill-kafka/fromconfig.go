@@ -1,9 +1,9 @@
 package kafka
 
 import (
-	"github.com/lynx-go/lynx"
-	lynxwatermill "github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	lynxwatermill "github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // NewFromConfig 从配置 "kafka" 段加载 Options 并创建 Transport。

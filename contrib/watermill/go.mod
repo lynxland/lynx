@@ -1,13 +1,13 @@
-module github.com/lynx-go/lynx/contrib/watermill
+module github.com/lynxland/lynx/contrib/watermill
 
 go 1.26.5
 
-replace github.com/lynx-go/lynx => ../../
+replace github.com/lynxland/lynx => ../../
 
 require (
 	github.com/ThreeDotsLabs/watermill v1.5.2
 	github.com/google/uuid v1.6.0
-	github.com/lynx-go/lynx v1.20.0
+	github.com/lynxland/lynx v1.20.0
 	github.com/spf13/viper v1.21.0
 )
 

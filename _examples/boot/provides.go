@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"github.com/google/wire"
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/boot"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/boot"
+	"github.com/lynxland/lynx/server/http"
 )
 
 //go:generate wire

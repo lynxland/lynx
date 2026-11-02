@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 func discardLogger() *slog.Logger {

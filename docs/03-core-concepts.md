@@ -322,7 +322,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 func main() {

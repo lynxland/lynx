@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // Lifecycle 是 HTTP / gRPC / debug 三个 server 适配器共享的生命周期状态机

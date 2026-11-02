@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/registry"
+	"github.com/lynxland/lynx/contrib/registry"
 )
 
 // ServiceName 是套件使用的服务名：工厂需保证其 Discovery 侧对该名字可用

@@ -17,7 +17,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // actor 是 lifecycle 调度的执行单元：execute 进入运行并阻塞至自行返回

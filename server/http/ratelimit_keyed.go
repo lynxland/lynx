@@ -13,7 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 	"golang.org/x/time/rate"
 )
 

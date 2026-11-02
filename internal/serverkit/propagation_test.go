@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // TestValidPropagationValue 锁定 SC-22 的入站值校验：合法值（UUID/常见

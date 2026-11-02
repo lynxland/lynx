@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/lynxtest"
 )
 
 // captureLogs 收集 Warn 及以上日志（WK-06/WK-15 测试断言用）。

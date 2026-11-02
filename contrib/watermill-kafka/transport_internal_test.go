@@ -10,7 +10,7 @@ import (
 	"github.com/IBM/sarama"
 	"github.com/ThreeDotsLabs/watermill"
 	watermillkafka "github.com/ThreeDotsLabs/watermill-kafka/v3/pkg/kafka"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 	"github.com/xdg-go/scram"
 )
 

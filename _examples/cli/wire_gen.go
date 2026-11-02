@@ -7,8 +7,8 @@
 package main
 
 import (
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/boot"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/boot"
 )
 
 // Injectors from wire.go:

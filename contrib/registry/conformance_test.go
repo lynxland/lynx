@@ -5,8 +5,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/lynx-go/lynx/contrib/registry"
-	"github.com/lynx-go/lynx/contrib/registry/registrytest"
+	"github.com/lynxland/lynx/contrib/registry"
+	"github.com/lynxland/lynx/contrib/registry/registrytest"
 )
 
 // fakeDNS 是 DNSResolver 的测试替身：SRV 恒 NXDOMAIN，A/AAAA 返回固定 IP。

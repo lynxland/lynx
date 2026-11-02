@@ -3,7 +3,7 @@ package eventbus
 import (
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // Resolver 是 Bus 配置解析的唯一归属（导出供 contrib Bus 实现复用）：

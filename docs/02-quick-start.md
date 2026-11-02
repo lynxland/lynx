@@ -7,7 +7,7 @@
 Lynx 要求 Go 1.25 及以上版本。在项目中通过 `go get` 安装：
 
 ```bash
-go get github.com/lynx-go/lynx
+go get github.com/lynxland/lynx
 ```
 
 ## 2.2 第一个 HTTP 服务
@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	gohttp "net/http"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/server/http"
 )
 
 func main() {
@@ -152,7 +152,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 func main() {
@@ -178,7 +178,7 @@ go run main.go
 
 ### 子命令式 CLI 与配置桥接
 
-子命令调度由外部库承担（如 [`lynx-go/commands`](https://github.com/lynx-go/commands)），命令参数（含 `-c/--config`）已由其解析。此时用 `lynx.WithConfigFile(path)` 声明配置文件路径并关闭框架内置的 `os.Args` 解析：
+子命令调度由外部库承担（如 [`lynxland/commands`](https://github.com/lynxland/commands)），命令参数（含 `-c/--config`）已由其解析。此时用 `lynx.WithConfigFile(path)` 声明配置文件路径并关闭框架内置的 `os.Args` 解析：
 
 ```go
 func (c *helloCmd) Run(ctx context.Context, env *commands.Environment, args []string) error {

@@ -1,6 +1,6 @@
 # consul
 
-模块路径：`github.com/lynx-go/lynx/contrib/consul`
+模块路径：`github.com/lynxland/lynx/contrib/consul`
 
 服务注册发现的 Consul 生产后端：`*Client` 同时实现 `registry.Registry` 与 `registry.Discovery`，并经 `Client.Coordinator()` 提供 `cluster.Coordinator`（KV + Session）实现。
 

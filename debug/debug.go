@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/internal/serverkit"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/internal/serverkit"
 )
 
 const (

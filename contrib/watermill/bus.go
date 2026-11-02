@@ -13,7 +13,7 @@ import (
 	"github.com/ThreeDotsLabs/watermill/message"
 	"github.com/ThreeDotsLabs/watermill/message/router/middleware"
 	"github.com/google/uuid"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // Bus 是 watermill 驱动的 eventbus.Bus：Router 调度 + 可插拔 Transport。

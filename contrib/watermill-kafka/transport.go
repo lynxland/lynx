@@ -1,7 +1,7 @@
 // Package kafka 提供 Kafka Transport 服务：按逻辑 topic 配置集群、
 // 物理主题与消费/发布参数，实现 eventbus.Transport。
 //
-// 导入建议：import wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"
+// 导入建议：import wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"
 //
 // 配置驱动：NewFromConfig 从配置 "kafka" 段加载 Options 并创建 Transport；
 // 段缺失或为空时返回 (nil, nil) 表示 Kafka 未启用——**返回 nil 时不得
@@ -39,9 +39,9 @@ import (
 	"github.com/ThreeDotsLabs/watermill"
 	watermillkafka "github.com/ThreeDotsLabs/watermill-kafka/v3/pkg/kafka"
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx"
-	lynxwatermill "github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	lynxwatermill "github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // Options 是 Kafka Transport 的配置；可用 app.Config().UnmarshalKey("kafka", &opts)

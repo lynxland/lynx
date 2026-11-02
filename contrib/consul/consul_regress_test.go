@@ -19,8 +19,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lynx-go/lynx/contrib/registry"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/contrib/registry"
+	"github.com/lynxland/lynx/lynxtest"
 )
 
 // eventually 在 deadline 内反复调用 cond 直到为真。

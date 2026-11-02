@@ -132,7 +132,7 @@ package main
 import (
 	"context"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 func main() {
@@ -243,12 +243,12 @@ app.Register(lynx.NewEventHandlerService(&OrderCreatedHandler{name: "order-creat
 `contrib/` 下的模块是框架官方维护的服务，各自是独立的 Go module，按需引入：
 
 ```bash
-go get github.com/lynx-go/lynx/contrib/watermill
-go get github.com/lynx-go/lynx/contrib/watermill-kafka
-go get github.com/lynx-go/lynx/contrib/telemetry
-go get github.com/lynx-go/lynx/contrib/schedule
-go get github.com/lynx-go/lynx/contrib/cluster
-go get github.com/lynx-go/lynx/contrib/zap
+go get github.com/lynxland/lynx/contrib/watermill
+go get github.com/lynxland/lynx/contrib/watermill-kafka
+go get github.com/lynxland/lynx/contrib/telemetry
+go get github.com/lynxland/lynx/contrib/schedule
+go get github.com/lynxland/lynx/contrib/cluster
+go get github.com/lynxland/lynx/contrib/zap
 ```
 
 ### EventBus：消息总线（核心 + Watermill + Kafka）

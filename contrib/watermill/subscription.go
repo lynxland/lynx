@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // subscriptionKey 是订阅复用单元：同一逻辑 topic 只建一条 transport 订阅，

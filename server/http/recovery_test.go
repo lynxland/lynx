@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // TestRecoveryPanicWritesResponse：panic handler → 500 + 通用 JSON 错误体

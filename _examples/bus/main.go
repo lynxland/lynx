@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // OrderCreated 是示例域事件。

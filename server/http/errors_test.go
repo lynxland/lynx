@@ -10,7 +10,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // notFoundError 实现 StatusError：声明 404。

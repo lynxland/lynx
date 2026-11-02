@@ -1,29 +1,29 @@
-module github.com/lynx-go/lynx/examples
+module github.com/lynxland/lynx/examples
 
 go 1.26.5
 
 replace (
-	github.com/lynx-go/lynx => ../
-	github.com/lynx-go/lynx/contrib/cluster => ../contrib/cluster
-	github.com/lynx-go/lynx/contrib/registry => ../contrib/registry
-	github.com/lynx-go/lynx/contrib/registry-redis => ../contrib/registry-redis
-	github.com/lynx-go/lynx/contrib/schedule => ../contrib/schedule
-	github.com/lynx-go/lynx/contrib/telemetry => ../contrib/telemetry
-	github.com/lynx-go/lynx/contrib/watermill => ../contrib/watermill
-	github.com/lynx-go/lynx/contrib/watermill-kafka => ../contrib/watermill-kafka
-	github.com/lynx-go/lynx/contrib/zap => ../contrib/zap
+	github.com/lynxland/lynx => ../
+	github.com/lynxland/lynx/contrib/cluster => ../contrib/cluster
+	github.com/lynxland/lynx/contrib/registry => ../contrib/registry
+	github.com/lynxland/lynx/contrib/registry-redis => ../contrib/registry-redis
+	github.com/lynxland/lynx/contrib/schedule => ../contrib/schedule
+	github.com/lynxland/lynx/contrib/telemetry => ../contrib/telemetry
+	github.com/lynxland/lynx/contrib/watermill => ../contrib/watermill
+	github.com/lynxland/lynx/contrib/watermill-kafka => ../contrib/watermill-kafka
+	github.com/lynxland/lynx/contrib/zap => ../contrib/zap
 )
 
 require (
 	github.com/google/wire v0.7.0
 	github.com/lynx-go/commands v0.2.1
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/registry v1.20.0
-	github.com/lynx-go/lynx/contrib/registry-redis v1.17.0
-	github.com/lynx-go/lynx/contrib/schedule v1.0.0
-	github.com/lynx-go/lynx/contrib/telemetry v1.0.0
-	github.com/lynx-go/lynx/contrib/watermill-kafka v1.7.0
-	github.com/lynx-go/lynx/contrib/zap v1.0.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/registry v1.20.0
+	github.com/lynxland/lynx/contrib/registry-redis v1.17.0
+	github.com/lynxland/lynx/contrib/schedule v1.0.0
+	github.com/lynxland/lynx/contrib/telemetry v1.0.0
+	github.com/lynxland/lynx/contrib/watermill-kafka v1.7.0
+	github.com/lynxland/lynx/contrib/zap v1.0.0
 	github.com/samber/lo v1.53.0
 	github.com/spf13/pflag v1.0.10
 )
@@ -52,8 +52,8 @@ require (
 	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
 	github.com/klauspost/compress v1.19.1 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.7 // indirect
-	github.com/lynx-go/lynx/contrib/cluster v1.20.0 // indirect
-	github.com/lynx-go/lynx/contrib/watermill v1.20.0 // indirect
+	github.com/lynxland/lynx/contrib/cluster v1.20.0 // indirect
+	github.com/lynxland/lynx/contrib/watermill v1.20.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/pierrec/lz4/v4 v4.1.27 // indirect

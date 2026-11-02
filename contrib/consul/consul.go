@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lynx-go/lynx/contrib/registry"
+	"github.com/lynxland/lynx/contrib/registry"
 )
 
 const (

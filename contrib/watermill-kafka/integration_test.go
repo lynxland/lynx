@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/lynxtest"
 	"github.com/testcontainers/testcontainers-go"
 	tckafka "github.com/testcontainers/testcontainers-go/modules/kafka"
 	"go.opentelemetry.io/otel"

@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/serverkit"
+	"github.com/lynxland/lynx/internal/serverkit"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 	"go.opentelemetry.io/otel/trace"
 	"google.golang.org/grpc"

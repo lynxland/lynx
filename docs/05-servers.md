@@ -58,8 +58,8 @@ import (
 	gohttp "net/http"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/server/http"
 )
 
 func main() {
@@ -111,7 +111,7 @@ type notFoundError struct{ msg string }
 func (e *notFoundError) Error() string   { return e.msg }
 func (e *notFoundError) StatusCode() int { return http.StatusNotFound }
 
-// lynxhttp 为 github.com/lynx-go/lynx/server/http
+// lynxhttp 为 github.com/lynxland/lynx/server/http
 mux := http.NewServeMux()
 mux.Handle("/users/", lynxhttp.NewErrorHandler(nil, func(ctx context.Context, w http.ResponseWriter, r *http.Request) error {
 	user, ok := findUser(r.URL.Path)
@@ -217,8 +217,8 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/server/grpc"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/server/grpc"
 	gogrpc "google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
@@ -297,7 +297,7 @@ var echoServiceDesc = gogrpc.ServiceDesc{
 生产排障离不开 pprof 性能剖析。Lynx 在根模块 `debug` 包提供开箱即用的运维诊断服务——一个可选的 `Service`，注册即挂载 pprof 端点：
 
 ```go
-import "github.com/lynx-go/lynx/debug"
+import "github.com/lynxland/lynx/debug"
 
 app.Register(debug.NewService())
 ```
@@ -340,7 +340,7 @@ app.Register(debug.NewService(
 
 ### 5.4.1 开箱即用：contrib/telemetry（框架托管）
 
-可观测性托管在独立 contrib 模块 `github.com/lynx-go/lynx/contrib/telemetry`，以\*\*服务\*\*形式注册，provider 的创建、全局注册与优雅关闭 flush 全部由框架处理：
+可观测性托管在独立 contrib 模块 `github.com/lynxland/lynx/contrib/telemetry`，以\*\*服务\*\*形式注册，provider 的创建、全局注册与优雅关闭 flush 全部由框架处理：
 
 ```go
 // 在 setup 回调中：
@@ -592,7 +592,7 @@ func newZapLogger() (*slog.Logger, error) {
 }
 ```
 
-其中 `logging` 是 `github.com/lynx-go/lynx/logging` 的别名，`lynxzap` 是 `github.com/lynx-go/lynx/contrib/zap` 的别名，`slogzap` 是 `github.com/samber/slog-zap/v2`。组装出的 logger 经 `lynx.WithLoggerProvider(func(lynx.AppContext) (*slog.Logger, error) { return newZapLogger() })` 注入后，服务内所有 `InfoContext` 日志都会携带链路字段；再把它传给 `http.WithLogger`，访问日志（含 `trace`/`spanId` 字段，见 5.1 节 `WithRequestLog`）也走同一条管线。
+其中 `logging` 是 `github.com/lynxland/lynx/logging` 的别名，`lynxzap` 是 `github.com/lynxland/lynx/contrib/zap` 的别名，`slogzap` 是 `github.com/samber/slog-zap/v2`。组装出的 logger 经 `lynx.WithLoggerProvider(func(lynx.AppContext) (*slog.Logger, error) { return newZapLogger() })` 注入后，服务内所有 `InfoContext` 日志都会携带链路字段；再把它传给 `http.WithLogger`，访问日志（含 `trace`/`spanId` 字段，见 5.1 节 `WithRequestLog`）也走同一条管线。
 
 ### 5.4.7 请求级日志字段：request_id/user_id 全链路传播
 

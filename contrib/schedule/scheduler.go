@@ -10,8 +10,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/cluster"
 	"github.com/robfig/cron/v3"
 )
 

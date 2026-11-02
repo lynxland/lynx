@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // busContext 是仅提供 Bus 的最小 AppContext（gRPC Init 只消费 Bus；其余

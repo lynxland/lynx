@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/buildinfo"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/buildinfo"
+	"github.com/lynxland/lynx/eventbus"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 )

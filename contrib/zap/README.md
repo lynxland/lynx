@@ -1,7 +1,7 @@
 # zap
 
 ```go
-import "github.com/lynx-go/lynx/contrib/zap"
+import "github.com/lynxland/lynx/contrib/zap"
 ```
 
 将 zap 高性能日志库包装为 `*slog.Logger`，提供与框架一致的日志级别与服务标识字段。
@@ -31,8 +31,8 @@ import "github.com/lynx-go/lynx/contrib/zap"
 package main
 
 import (
-	"github.com/lynx-go/lynx"
-	lynxzap "github.com/lynx-go/lynx/contrib/zap"
+	"github.com/lynxland/lynx"
+	lynxzap "github.com/lynxland/lynx/contrib/zap"
 )
 
 func main() {

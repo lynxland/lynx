@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // inflightTracker 统计 handler 并发：进入 +1、退出 -1，记录峰值。

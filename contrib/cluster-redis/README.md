@@ -1,6 +1,6 @@
 # cluster-redis
 
-模块路径：`github.com/lynx-go/lynx/contrib/cluster-redis`
+模块路径：`github.com/lynxland/lynx/contrib/cluster-redis`
 
 用 Redis 实现 `cluster.Coordinator`：`SET NX` 抢占 + Lua 比对 token 续约 / 删除。这是**协调后端，不是给业务用的 Redis 客户端**（`coordinator.go:1` 包注释）——只做跨进程互斥与选主的键空间操作，不代理任何业务读写。
 
@@ -18,8 +18,8 @@
 
 ```go
 import (
-	"github.com/lynx-go/lynx/contrib/cluster"
-	clusterredis "github.com/lynx-go/lynx/contrib/cluster-redis"
+	"github.com/lynxland/lynx/contrib/cluster"
+	clusterredis "github.com/lynxland/lynx/contrib/cluster-redis"
 	"github.com/redis/go-redis/v9"
 )
 

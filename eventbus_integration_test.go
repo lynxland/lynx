@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 type busProbeService struct {

@@ -11,7 +11,7 @@ import (
 )
 
 // tracerName 是 eventbus 的 OTel instrumentation scope 名。
-const tracerName = "github.com/lynx-go/lynx/eventbus"
+const tracerName = "github.com/lynxland/lynx/eventbus"
 
 // injectTrace 把 ctx 的当前 trace 上下文（W3C traceparent / tracestate，经
 // 全局 propagator）注入事件头——发布侧传播的唯一入口，消费侧据此续链。

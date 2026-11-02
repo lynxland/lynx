@@ -1,7 +1,7 @@
 # schedule
 
 ```go
-import "github.com/lynx-go/lynx/contrib/schedule"
+import "github.com/lynxland/lynx/contrib/schedule"
 ```
 
 基于 robfig/cron 的定时任务调度服务。
@@ -39,8 +39,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/schedule"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/schedule"
 )
 
 type helloTask struct{}

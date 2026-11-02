@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 	"github.com/spf13/viper"
 )
 

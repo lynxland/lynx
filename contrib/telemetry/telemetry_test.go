@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/lynxtest"
 	"go.opentelemetry.io/otel"
 	sdkmetric "go.opentelemetry.io/otel/sdk/metric"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"

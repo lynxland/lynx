@@ -12,8 +12,8 @@ import (
 	"github.com/IBM/sarama"
 	"github.com/ThreeDotsLabs/watermill"
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/lynxtest"
 	"github.com/spf13/viper"
 )
 

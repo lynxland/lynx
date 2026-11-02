@@ -1,6 +1,6 @@
 package main
 
-import "github.com/lynx-go/lynx/boot"
+import "github.com/lynxland/lynx/boot"
 
 // Deps 是命令直接调用的类型化业务对象（图的业务出口）。
 type Deps struct {

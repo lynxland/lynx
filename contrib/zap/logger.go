@@ -9,7 +9,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 	"github.com/samber/lo"
 	slogzap "github.com/samber/slog-zap/v2"
 	"go.uber.org/zap"

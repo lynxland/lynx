@@ -5,8 +5,8 @@ import (
 	"log/slog"
 
 	"github.com/google/uuid"
-	"github.com/lynx-go/lynx/internal/propagation"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/internal/propagation"
+	"github.com/lynxland/lynx/logging"
 )
 
 // wire 键与校验规则的中性归属是 internal/propagation（server 适配器、

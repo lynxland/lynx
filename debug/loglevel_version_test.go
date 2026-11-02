@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/buildinfo"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/buildinfo"
 )
 
 // controlledFakeAppContext 在 fakeAppContext 之上实现日志级别控制接口。

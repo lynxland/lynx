@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 // TestResolverStaleBoundary 锁定 stale 判定的精确边界（假时钟，不再 sleep）：

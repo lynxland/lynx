@@ -1,6 +1,6 @@
 # watermill
 
-模块：`github.com/lynx-go/lynx/contrib/watermill`（独立 Go module）
+模块：`github.com/lynxland/lynx/contrib/watermill`（独立 Go module）
 
 Watermill 驱动的 `eventbus.Bus` 实现：Router 负责 handler 调度，收发经可插拔 `eventbus.Transport`（内存 / Kafka / 自定义）；`lynx.*` 生命周期事件强制走进程内内存 Transport，禁止出进程。
 
@@ -22,9 +22,9 @@ package main
 import (
 	"context"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 var OrderCreated = eventbus.NewTopic[map[string]string]("order.created")

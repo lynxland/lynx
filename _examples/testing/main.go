@@ -5,8 +5,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/lynx-go/lynx"
-	lynxhttp "github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	lynxhttp "github.com/lynxland/lynx/server/http"
 )
 
 // httpServer 暴露给测试捕获引用（获取实际监听地址）；生产 main 不使用。

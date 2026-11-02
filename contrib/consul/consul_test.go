@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/registry"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/registry"
 	"github.com/spf13/viper"
 )
 

@@ -1,7 +1,7 @@
 package eventbus
 
 import (
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // isPropagationField 报告日志字段是否属于请求标识白名单（request_id /

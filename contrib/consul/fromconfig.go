@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/registry"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/registry"
 )
 
 // fileConfig 是 registry 配置段中 consul 独有的子树。共享字段

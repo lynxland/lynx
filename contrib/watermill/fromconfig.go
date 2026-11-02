@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // busFileConfig 是 "bus" 段配置（NewFromConfig 使用）。

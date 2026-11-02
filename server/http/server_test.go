@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/logging"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 	sdkmetric "go.opentelemetry.io/otel/sdk/metric"

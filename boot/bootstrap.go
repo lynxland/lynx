@@ -3,7 +3,7 @@
 package boot
 
 import (
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // PreStartHooks 是一组启动前钩子函数（对应 app.OnPreStart）。

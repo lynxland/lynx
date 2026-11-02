@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
-	serverhttp "github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx/logging"
+	serverhttp "github.com/lynxland/lynx/server/http"
 	"go.opentelemetry.io/otel/propagation"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )

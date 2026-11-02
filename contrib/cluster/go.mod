@@ -1,10 +1,10 @@
-module github.com/lynx-go/lynx/contrib/cluster
+module github.com/lynxland/lynx/contrib/cluster
 
 go 1.26.5
 
-replace github.com/lynx-go/lynx => ../../
+replace github.com/lynxland/lynx => ../../
 
-require github.com/lynx-go/lynx v1.20.0
+require github.com/lynxland/lynx v1.20.0
 
 require (
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect

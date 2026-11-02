@@ -7,7 +7,7 @@ package main
 
 import (
 	"github.com/google/wire"
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 func wireApp(app lynx.App) (*App, func(), error) {

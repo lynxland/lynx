@@ -3,9 +3,9 @@
 // 一份）：
 //
 //	go build -ldflags "\
-//	  -X github.com/lynx-go/lynx/buildinfo.Version=v1.20.0 \
-//	  -X github.com/lynx-go/lynx/buildinfo.Commit=$(git rev-parse --short HEAD) \
-//	  -X github.com/lynx-go/lynx/buildinfo.Date=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+//	  -X github.com/lynxland/lynx/buildinfo.Version=v1.20.0 \
+//	  -X github.com/lynxland/lynx/buildinfo.Commit=$(git rev-parse --short HEAD) \
+//	  -X github.com/lynxland/lynx/buildinfo.Date=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 //
 // 变量缺省零值（未注入即"没有构建信息"，BuildInfo.IsZero 可判定）；人读
 // 兜底归 BuildInfo.Display。根包的 lynx.BuildInfo() 是取值函数（函数与

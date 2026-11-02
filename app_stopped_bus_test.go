@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // TestAppStoppedDeliveredBeforeBusStop 关停：AppStopped 在 Bus.Stop 前可被订阅收到。

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 	"github.com/spf13/viper"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )

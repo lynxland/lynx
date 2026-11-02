@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // FileConfig 是 registry 配置段（yaml 键 → mapstructure 字段）的完整

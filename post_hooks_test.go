@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // recordingBus 记录 Stop 调用顺序，用于断言 post-stop 钩子在总线关停之后执行。

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/lynxtest"
 )
 
 // failOnceChecker fails the first CheckHealth then succeeds（等价于包内

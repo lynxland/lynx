@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // markerMarshaler 是可在断言中按值区分的序列化器。

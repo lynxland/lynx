@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // runLynx 是整个二进制写一次的 helper：图供依赖（wireApp 双聚合），

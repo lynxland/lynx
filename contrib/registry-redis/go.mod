@@ -1,16 +1,16 @@
-module github.com/lynx-go/lynx/contrib/registry-redis
+module github.com/lynxland/lynx/contrib/registry-redis
 
 go 1.26.5
 
 replace (
-	github.com/lynx-go/lynx => ../../
-	github.com/lynx-go/lynx/contrib/registry => ../registry
+	github.com/lynxland/lynx => ../../
+	github.com/lynxland/lynx/contrib/registry => ../registry
 )
 
 require (
 	github.com/alicebob/miniredis/v2 v2.40.0
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/registry v1.20.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/registry v1.20.0
 	github.com/redis/go-redis/v9 v9.22.0
 	github.com/spf13/viper v1.21.0
 )

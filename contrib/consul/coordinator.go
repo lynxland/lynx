@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/contrib/cluster"
 )
 
 // MinSessionTTL 是 Consul Session TTL 的下限（官方 10s）。

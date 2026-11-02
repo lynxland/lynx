@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/contrib/cluster"
 )
 
 // TestTriggerFiresImmediately：Trigger 立即执行任务，无需等待 cron

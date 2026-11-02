@@ -8,8 +8,8 @@ import (
 	"sync"
 
 	"github.com/google/wire"
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/boot"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/boot"
 )
 
 // ProviderSet 是 Wire 依赖图：boot.New 聚合 hooks 与服务，NewDeps/NewApp

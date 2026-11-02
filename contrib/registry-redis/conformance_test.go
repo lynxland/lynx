@@ -3,8 +3,8 @@ package registryredis
 import (
 	"testing"
 
-	"github.com/lynx-go/lynx/contrib/registry"
-	"github.com/lynx-go/lynx/contrib/registry/registrytest"
+	"github.com/lynxland/lynx/contrib/registry"
+	"github.com/lynxland/lynx/contrib/registry/registrytest"
 )
 
 // TestConformance：Redis 后端接入 registrytest 契约套件（miniredis）。

@@ -1,4 +1,4 @@
-module github.com/lynx-go/lynx
+module github.com/lynxland/lynx
 
 go 1.26.5
 

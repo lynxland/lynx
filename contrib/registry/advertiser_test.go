@@ -3,8 +3,8 @@ package registry
 import (
 	"testing"
 
-	lynxgrpc "github.com/lynx-go/lynx/server/grpc"
-	lynxhttp "github.com/lynx-go/lynx/server/http"
+	lynxgrpc "github.com/lynxland/lynx/server/grpc"
+	lynxhttp "github.com/lynxland/lynx/server/http"
 )
 
 func TestStaticAdvertiser(t *testing.T) {

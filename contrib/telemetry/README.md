@@ -1,7 +1,7 @@
 # telemetry
 
 ```go
-import "github.com/lynx-go/lynx/contrib/telemetry"
+import "github.com/lynxland/lynx/contrib/telemetry"
 ```
 
 以服务形式托管 OpenTelemetry 的生命周期：创建 TracerProvider 与 MeterProvider、设置为 otel 全局值，并在应用停止时自动 flush 与关闭。
@@ -36,8 +36,8 @@ import "github.com/lynx-go/lynx/contrib/telemetry"
 package main
 
 import (
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/telemetry"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/telemetry"
 	"go.opentelemetry.io/otel"
 )
 

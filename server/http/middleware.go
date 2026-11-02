@@ -3,7 +3,7 @@ package http
 import (
 	"net/http"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // Middleware wraps an http.Handler, typically to add cross-cutting behavior

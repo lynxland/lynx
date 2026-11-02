@@ -10,8 +10,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 // ValidateCall 校验 Claim/Acquire 的公共入参，返回第一个命中的错误：

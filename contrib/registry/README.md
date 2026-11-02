@@ -1,6 +1,6 @@
 # registry
 
-模块路径：`github.com/lynx-go/lynx/contrib/registry`
+模块路径：`github.com/lynxland/lynx/contrib/registry`
 
 服务注册与发现的可选 contrib：注册发现的数据模型与接口（`Registry` / `Discovery`）、进程级注册服务 Registrar、客户端发现 Resolver，以及 memory / DNS 两个零依赖后端。生产级 Consul 后端在 [contrib/consul](../consul/README.md)。
 

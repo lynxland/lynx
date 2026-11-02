@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/lynxtest"
 )
 
 // fakeRegistry 记录调用并可注入失败。

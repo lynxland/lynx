@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	lynxgrpc "github.com/lynx-go/lynx/server/grpc"
-	lynxhttp "github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	lynxgrpc "github.com/lynxland/lynx/server/grpc"
+	lynxhttp "github.com/lynxland/lynx/server/http"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/test/bufconn"

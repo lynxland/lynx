@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 func TestValidateCall(t *testing.T) {

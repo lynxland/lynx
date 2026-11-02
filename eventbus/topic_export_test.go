@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 func TestTopicOptionsIsExported(t *testing.T) {

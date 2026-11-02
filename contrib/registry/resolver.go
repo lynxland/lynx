@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 // ErrResolverClosed 在 Resolver.Close 之后的 Get/GetAll 上返回。

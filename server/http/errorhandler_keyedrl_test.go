@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // TestServerErrorHandlerFallback：Server.NewErrorHandler 的 nil 兜底

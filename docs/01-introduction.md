@@ -140,7 +140,7 @@ lynx/
 ### 安装
 
 ```bash
-go get github.com/lynx-go/lynx
+go get github.com/lynxland/lynx
 ```
 
 ### 最简单的 HTTP 服务
@@ -152,8 +152,8 @@ import (
     "context"
     gohttp "net/http"
 
-    "github.com/lynx-go/lynx"
-    "github.com/lynx-go/lynx/server/http"
+    "github.com/lynxland/lynx"
+    "github.com/lynxland/lynx/server/http"
 )
 
 func main() {

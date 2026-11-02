@@ -6,8 +6,8 @@ import (
 	"github.com/IBM/sarama"
 	watermillkafka "github.com/ThreeDotsLabs/watermill-kafka/v3/pkg/kafka"
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx/eventbus"
-	lynxwatermill "github.com/lynx-go/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
+	lynxwatermill "github.com/lynxland/lynx/contrib/watermill"
 )
 
 func TestWireMarshalerSetsKafkaRecordKey(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // Real 返回真实时间源（lynx.Clock 的生产默认）。

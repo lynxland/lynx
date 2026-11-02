@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/lynxtest"
 )
 
 // TestHelloEndpoint 是 L2 组装测试：走与生产 main 完全相同的 Setup，

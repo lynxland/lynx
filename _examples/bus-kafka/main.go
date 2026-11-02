@@ -17,10 +17,10 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"
-	"github.com/lynx-go/lynx/contrib/zap"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"
+	"github.com/lynxland/lynx/contrib/zap"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // OrderCreated 是示例域事件。

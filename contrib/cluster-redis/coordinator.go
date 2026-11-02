@@ -8,7 +8,7 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/contrib/cluster"
 	"github.com/redis/go-redis/v9"
 )
 

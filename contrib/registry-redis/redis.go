@@ -14,7 +14,7 @@
 // （默认 15s）兜底重拉，覆盖 Pub/Sub 的两个盲区——键静默过期不发事件、订阅
 // 断线丢消息。快照规范相等去重由 registry.WatcherSession 承载。
 //
-// 导入建议：import registryredis "github.com/lynx-go/lynx/contrib/registry-redis"
+// 导入建议：import registryredis "github.com/lynxland/lynx/contrib/registry-redis"
 package registryredis
 
 import (
@@ -27,7 +27,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/registry"
+	"github.com/lynxland/lynx/contrib/registry"
 	"github.com/redis/go-redis/v9"
 )
 

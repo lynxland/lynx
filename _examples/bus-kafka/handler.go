@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // OrderCreatedHandler 是业务 handler：结构体持有依赖（name 构造期注入），

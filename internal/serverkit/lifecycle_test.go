@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // TestLifecycleStartGuard 钉住重入守卫与复位语义：二次 BeginStart 报错

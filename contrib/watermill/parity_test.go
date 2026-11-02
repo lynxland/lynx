@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/watermill"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/contrib/watermill"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // TestDeliverySemanticsParity 把同一场景矩阵分别在内存 Bus 与

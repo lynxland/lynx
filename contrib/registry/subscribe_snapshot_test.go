@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 // TestSubscribeSnapshotIsDeepCopy：订阅推送是深拷贝副本（与 Get 的

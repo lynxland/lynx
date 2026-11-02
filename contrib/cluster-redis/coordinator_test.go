@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
-	"github.com/lynx-go/lynx/contrib/cluster"
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/internal/clock"
 	"github.com/redis/go-redis/v9"
 )
 

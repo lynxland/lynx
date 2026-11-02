@@ -1,22 +1,22 @@
 # Lynx 发布流程
 
-本仓库是多模块 Go workspace：根模块 `github.com/lynx-go/lynx` 与 10 个 contrib 子模块共存于同一仓库。发布时**必须为每个模块单独打 tag**，否则 Go 模块代理无法解析子模块版本。
+本仓库是多模块 Go workspace：根模块 `github.com/lynxland/lynx` 与 10 个 contrib 子模块共存于同一仓库。发布时**必须为每个模块单独打 tag**，否则 Go 模块代理无法解析子模块版本。
 
 ## 多模块 tag 约定
 
 | 模块 | Tag 示例 |
 | --- | --- |
-| 根模块 `github.com/lynx-go/lynx` | `v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/zap` | `contrib/zap/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/watermill` | `contrib/watermill/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/watermill-kafka` | `contrib/watermill-kafka/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/telemetry` | `contrib/telemetry/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/schedule` | `contrib/schedule/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/registry` | `contrib/registry/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/registry-redis` | `contrib/registry-redis/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/consul` | `contrib/consul/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/cluster` | `contrib/cluster/v1.0.0` |
-| `github.com/lynx-go/lynx/contrib/cluster-redis` | `contrib/cluster-redis/v1.0.0` |
+| 根模块 `github.com/lynxland/lynx` | `v1.0.0` |
+| `github.com/lynxland/lynx/contrib/zap` | `contrib/zap/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/watermill` | `contrib/watermill/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/watermill-kafka` | `contrib/watermill-kafka/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/telemetry` | `contrib/telemetry/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/schedule` | `contrib/schedule/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/registry` | `contrib/registry/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/registry-redis` | `contrib/registry-redis/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/consul` | `contrib/consul/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/cluster` | `contrib/cluster/v1.0.0` |
+| `github.com/lynxland/lynx/contrib/cluster-redis` | `contrib/cluster-redis/v1.0.0` |
 
 > Go 规定位于子目录的模块，其 tag 必须以模块路径相对仓库根的目录作为前缀（`contrib/<name>/vX.Y.Z`），这是模块代理正确识别子模块版本的必要条件。
 
@@ -82,7 +82,7 @@ lynx（根） ──────────┬──> contrib/zap
 - [ ] **CI 全绿**：`.github/workflows/ci.yml` 中 12 个模块（根、`_examples`、10 个 contrib）的 vet、`go test -race` 与 golangci-lint 矩阵全部通过
 - [ ] **本地回归**：12 个模块逐个执行 `go build ./... && go vet ./... && go test -race ./... && golangci-lint run`
 - [ ] **ROADMAP 同步**：本次发版覆盖的路线图条目已勾选
-- [ ] **模块间版本引用**：各 `contrib/*/go.mod` 的 `require github.com/lynx-go/lynx` 指向已发布的根模块版本；跨 contrib 依赖（consul→registry/cluster、registry-redis→registry、schedule→cluster、watermill-kafka→watermill）指向对应模块的已发布版本。`replace ../` 仅 workspace 内生效、发布后对消费方无影响（消费方忽略依赖模块的 replace），无需删除；发版前确认各 require 版本已随批 bump
+- [ ] **模块间版本引用**：各 `contrib/*/go.mod` 的 `require github.com/lynxland/lynx` 指向已发布的根模块版本；跨 contrib 依赖（consul→registry/cluster、registry-redis→registry、schedule→cluster、watermill-kafka→watermill）指向对应模块的已发布版本。`replace ../` 仅 workspace 内生效、发布后对消费方无影响（消费方忽略依赖模块的 replace），无需删除；发版前确认各 require 版本已随批 bump
 
 ## 发版后
 

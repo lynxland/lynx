@@ -11,8 +11,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/lynxtest"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

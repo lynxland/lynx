@@ -8,7 +8,7 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // wire 键：HTTP header 名与 gRPC metadata 键同源。gRPC metadata 规范要求

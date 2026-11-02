@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // funcChecker 把函数适配为 lynx.Checker。

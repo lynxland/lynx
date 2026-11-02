@@ -1,6 +1,6 @@
 # cli 示例：多命令 + Wire 双聚合（boot 模式）
 
-使用 [`github.com/lynx-go/commands`](https://github.com/lynx-go/commands)
+使用 [`github.com/lynxland/commands`](https://github.com/lynxland/commands)
 构建多子命令 CLI，命令的业务对象来自 Wire 依赖图。演示 v1.12.0 的
 CLI 模式三件套：`lynx.WithConfigFile`（配置桥接）、双聚合注入器出口
 （`App{*boot.Bootstrap; *Deps}`）、`runLynx` helper（图供依赖、子命令

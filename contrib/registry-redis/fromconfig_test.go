@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 	"github.com/spf13/viper"
 )
 

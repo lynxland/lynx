@@ -10,8 +10,8 @@ import (
 	"github.com/IBM/sarama"
 	"github.com/ThreeDotsLabs/watermill"
 	"github.com/ThreeDotsLabs/watermill/message"
-	wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"
-	"github.com/lynx-go/lynx/eventbus"
+	wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // blackboxFactory 是 ClientFactory 的 fake：记录构造参数并返回可控的

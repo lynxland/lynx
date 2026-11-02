@@ -7,10 +7,10 @@ import (
 	gohttp "net/http"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/contrib/telemetry"
-	"github.com/lynx-go/lynx/contrib/zap"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/contrib/telemetry"
+	"github.com/lynxland/lynx/contrib/zap"
+	"github.com/lynxland/lynx/server/http"
 	"github.com/spf13/pflag"
 )
 

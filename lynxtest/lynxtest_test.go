@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/lynxtest"
-	lynxgrpc "github.com/lynx-go/lynx/server/grpc"
-	lynxhttp "github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/lynxtest"
+	lynxgrpc "github.com/lynxland/lynx/server/grpc"
+	lynxhttp "github.com/lynxland/lynx/server/http"
 	grpc_health_v1 "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/test/bufconn"
 )

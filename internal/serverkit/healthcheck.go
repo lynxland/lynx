@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 )
 
 // DefaultHealthCheckTimeout 是单个 checker 的执行上限（SC-03）：

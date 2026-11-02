@@ -5,8 +5,8 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/lynx-go/lynx/internal/propagation"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/internal/propagation"
+	"github.com/lynxland/lynx/logging"
 )
 
 // InvokeOptions 是共享投递执行器的输入：

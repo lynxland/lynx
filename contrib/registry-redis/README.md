@@ -1,6 +1,6 @@
 # registry-redis
 
-模块路径：`github.com/lynx-go/lynx/contrib/registry-redis`
+模块路径：`github.com/lynxland/lynx/contrib/registry-redis`
 
 用 Redis 实现 `registry.Registry` 与 `registry.Discovery`：实例键 TTL 即租约，过期即下线；Watch 走 Pub/Sub 推送 + 兜底轮询。与 Consul 后端（`contrib/consul`）平级，Registrar / Resolver / 契约套件全部复用 `contrib/registry`。
 
@@ -28,9 +28,9 @@
 
 ```go
 import (
-    "github.com/lynx-go/lynx"
-    "github.com/lynx-go/lynx/contrib/registry"
-    registryredis "github.com/lynx-go/lynx/contrib/registry-redis"
+    "github.com/lynxland/lynx"
+    "github.com/lynxland/lynx/contrib/registry"
+    registryredis "github.com/lynxland/lynx/contrib/registry-redis"
 )
 ```
 

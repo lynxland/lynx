@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/lynx-go/lynx/internal/propagation"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/internal/propagation"
+	"github.com/lynxland/lynx/logging"
 )
 
 // CloneRawEvent 深拷贝 RawEvent：Headers 一律克隆为非 nil，Payload 复制。

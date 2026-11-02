@@ -1,18 +1,18 @@
-module github.com/lynx-go/lynx/contrib/consul
+module github.com/lynxland/lynx/contrib/consul
 
 go 1.26.5
 
 replace (
-	github.com/lynx-go/lynx => ../../
-	github.com/lynx-go/lynx/contrib/cluster => ../cluster
-	github.com/lynx-go/lynx/contrib/registry => ../registry
+	github.com/lynxland/lynx => ../../
+	github.com/lynxland/lynx/contrib/cluster => ../cluster
+	github.com/lynxland/lynx/contrib/registry => ../registry
 )
 
 require (
 	github.com/hashicorp/consul/api v1.34.4
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/cluster v1.20.0
-	github.com/lynx-go/lynx/contrib/registry v1.20.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/cluster v1.20.0
+	github.com/lynxland/lynx/contrib/registry v1.20.0
 	github.com/spf13/viper v1.21.0
 )
 

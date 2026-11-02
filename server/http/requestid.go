@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/lynx-go/lynx/internal/serverkit"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/internal/serverkit"
+	"github.com/lynxland/lynx/logging"
 )
 
 // RequestIDHeader 是 request_id 透传/回写的 HTTP 头部名：与 client/http

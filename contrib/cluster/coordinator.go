@@ -7,8 +7,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/internal/clock"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/internal/clock"
 )
 
 const (

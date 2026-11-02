@@ -22,7 +22,7 @@ Lynx 是一个轻量级 Go 微服务框架：统一的应用生命周期、`Serv
 要求 **Go 1.26.5+**：
 
 ```bash
-go get github.com/lynx-go/lynx
+go get github.com/lynxland/lynx
 ```
 
 ## 快速开始
@@ -36,8 +36,8 @@ import (
 	"encoding/json"
 	gohttp "net/http"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/server/http"
 )
 
 func main() {
@@ -95,7 +95,7 @@ go run main.go
 默认内存 Bus 由框架注入，无需 `Register`。业务以 `Topic[T]` 为主路径；Bus 解析顺序：`eventbus.WithBus` → Context → `Default()`。
 
 ```go
-import "github.com/lynx-go/lynx/eventbus"
+import "github.com/lynxland/lynx/eventbus"
 
 var UserCreated = eventbus.NewTopic[User]("user.created")
 
@@ -126,8 +126,8 @@ Transport 由框架托管生命周期：
 
 ```go
 import (
-	"github.com/lynx-go/lynx"
-	wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"
+	"github.com/lynxland/lynx"
+	wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"
 )
 
 lynx.NewRunner(setup,
@@ -190,7 +190,7 @@ Kafka 消费语义要点：
 ### 定时任务
 
 ```go
-import "github.com/lynx-go/lynx/contrib/schedule"
+import "github.com/lynxland/lynx/contrib/schedule"
 
 type MyTask struct{}
 
@@ -278,19 +278,19 @@ lynx/
 ## 扩展模块
 
 ```bash
-github.com/lynx-go/lynx/server/http
-github.com/lynx-go/lynx/server/grpc
-github.com/lynx-go/lynx/eventbus
-github.com/lynx-go/lynx/contrib/watermill
-github.com/lynx-go/lynx/contrib/watermill-kafka
-github.com/lynx-go/lynx/contrib/telemetry
-github.com/lynx-go/lynx/contrib/registry
-github.com/lynx-go/lynx/contrib/consul
-github.com/lynx-go/lynx/contrib/registry-redis
-github.com/lynx-go/lynx/contrib/cluster
-github.com/lynx-go/lynx/contrib/cluster-redis
-github.com/lynx-go/lynx/contrib/schedule
-github.com/lynx-go/lynx/contrib/zap
+github.com/lynxland/lynx/server/http
+github.com/lynxland/lynx/server/grpc
+github.com/lynxland/lynx/eventbus
+github.com/lynxland/lynx/contrib/watermill
+github.com/lynxland/lynx/contrib/watermill-kafka
+github.com/lynxland/lynx/contrib/telemetry
+github.com/lynxland/lynx/contrib/registry
+github.com/lynxland/lynx/contrib/consul
+github.com/lynxland/lynx/contrib/registry-redis
+github.com/lynxland/lynx/contrib/cluster
+github.com/lynxland/lynx/contrib/cluster-redis
+github.com/lynxland/lynx/contrib/schedule
+github.com/lynxland/lynx/contrib/zap
 ```
 
 多模块发布时需分别打 tag（主仓 `v{version}`，contrib 为 `contrib/<name>/{version}`）。详见 `RELEASE.md` / `mise run release-all -- vX.Y.Z "release vX.Y.Z"`。

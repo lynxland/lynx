@@ -30,7 +30,7 @@ import (
 	otelruntime "go.opentelemetry.io/contrib/instrumentation/runtime"
 	"sync/atomic"
 
-	"github.com/lynx-go/lynx"
+	"github.com/lynxland/lynx"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/prometheus"

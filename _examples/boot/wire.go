@@ -8,8 +8,8 @@ import (
 	"log/slog"
 
 	"github.com/google/wire"
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/boot"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/boot"
 )
 
 func wireBootstrap(app lynx.App, slogger *slog.Logger) (*boot.Bootstrap, func(), error) {

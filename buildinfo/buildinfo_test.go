@@ -52,7 +52,7 @@ const (
 
 // buildinfoLdflagsTarget 是三个注入目标的共享前缀（文档注释的机器可执行
 // 形态——注释拼错探针不会红，这里拼错用户构建期静默 no-op，两者都钉）。
-const buildinfoLdflagsTarget = "github.com/lynx-go/lynx/buildinfo"
+const buildinfoLdflagsTarget = "github.com/lynxland/lynx/buildinfo"
 
 // TestBuildInfoLdflagsInjection 是注入通道的活体探针：以子 go test 进程
 // 携带 -ldflags -X 重跑本包，断言文档承诺的三个目标精确生效。go test

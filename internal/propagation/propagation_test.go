@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/logging"
 )
 
 // TestValid 钉住入站/传播值校验：合法（UUID/常见追踪 ID）通过，超长与

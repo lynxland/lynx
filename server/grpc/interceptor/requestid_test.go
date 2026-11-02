@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lynx-go/lynx/internal/serverkit"
-	"github.com/lynx-go/lynx/logging"
+	"github.com/lynxland/lynx/internal/serverkit"
+	"github.com/lynxland/lynx/logging"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

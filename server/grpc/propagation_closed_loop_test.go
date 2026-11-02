@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	clientgrpc "github.com/lynx-go/lynx/client/grpc"
-	"github.com/lynx-go/lynx/logging"
+	clientgrpc "github.com/lynxland/lynx/client/grpc"
+	"github.com/lynxland/lynx/logging"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

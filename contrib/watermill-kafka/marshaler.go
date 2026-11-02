@@ -4,7 +4,7 @@ import (
 	"github.com/IBM/sarama"
 	watermillkafka "github.com/ThreeDotsLabs/watermill-kafka/v3/pkg/kafka"
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/lynx-go/lynx/eventbus"
+	"github.com/lynxland/lynx/eventbus"
 )
 
 // wireMarshaler 将 RawEvent 的 MessageKey（x-message-key）写入 Kafka record Key

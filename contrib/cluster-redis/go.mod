@@ -1,16 +1,16 @@
-module github.com/lynx-go/lynx/contrib/cluster-redis
+module github.com/lynxland/lynx/contrib/cluster-redis
 
 go 1.26.5
 
 replace (
-	github.com/lynx-go/lynx => ../../
-	github.com/lynx-go/lynx/contrib/cluster => ../cluster
+	github.com/lynxland/lynx => ../../
+	github.com/lynxland/lynx/contrib/cluster => ../cluster
 )
 
 require (
 	github.com/alicebob/miniredis/v2 v2.40.0
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/cluster v1.20.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/cluster v1.20.0
 	github.com/redis/go-redis/v9 v9.22.0
 )
 

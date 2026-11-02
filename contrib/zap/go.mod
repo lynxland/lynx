@@ -1,11 +1,11 @@
-module github.com/lynx-go/lynx/contrib/zap
+module github.com/lynxland/lynx/contrib/zap
 
 go 1.26.5
 
-replace github.com/lynx-go/lynx => ../../
+replace github.com/lynxland/lynx => ../../
 
 require (
-	github.com/lynx-go/lynx v1.20.0
+	github.com/lynxland/lynx v1.20.0
 	github.com/samber/lo v1.53.0
 	github.com/samber/slog-zap/v2 v2.7.0
 	go.uber.org/zap v1.28.0

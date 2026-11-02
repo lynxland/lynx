@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	"github.com/lynx-go/lynx/eventbus"
-	"github.com/lynx-go/lynx/internal/serverkit"
+	"github.com/lynxland/lynx"
+	"github.com/lynxland/lynx/eventbus"
+	"github.com/lynxland/lynx/internal/serverkit"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/propagation"

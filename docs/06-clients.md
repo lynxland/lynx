@@ -14,7 +14,7 @@
 属性传播、整体超时与可配置重试。零配置可用。
 
 ```go
-import clienthttp "github.com/lynx-go/lynx/client/http"
+import clienthttp "github.com/lynxland/lynx/client/http"
 
 client := clienthttp.New() // 整体超时 30s、无重试、otel 插装就绪
 
@@ -110,7 +110,7 @@ handler）、trace 与日志属性传播（写入 outgoing metadata）、默认�
 超时。
 
 ```go
-import clientgrpc "github.com/lynx-go/lynx/client/grpc"
+import clientgrpc "github.com/lynxland/lynx/client/grpc"
 
 conn, err := clientgrpc.Dial("user-service:9090")
 if err != nil { ... }

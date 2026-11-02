@@ -1,15 +1,15 @@
-module github.com/lynx-go/lynx/contrib/schedule
+module github.com/lynxland/lynx/contrib/schedule
 
 go 1.26.5
 
 replace (
-	github.com/lynx-go/lynx => ../../
-	github.com/lynx-go/lynx/contrib/cluster => ../cluster
+	github.com/lynxland/lynx => ../../
+	github.com/lynxland/lynx/contrib/cluster => ../cluster
 )
 
 require (
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/cluster v1.20.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/cluster v1.20.0
 	github.com/robfig/cron/v3 v3.0.1
 )
 

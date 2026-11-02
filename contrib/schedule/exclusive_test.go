@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/contrib/cluster"
 )
 
 func TestExclusiveRequiresCoordinator(t *testing.T) {

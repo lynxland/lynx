@@ -42,7 +42,7 @@ func (o Options) metricsConfig() (enabled bool, interval time.Duration) {
 
 const (
 	// meterName 是 Kafka Transport 的 otel instrumentation scope 名。
-	meterName = "github.com/lynx-go/lynx/contrib/watermill-kafka"
+	meterName = "github.com/lynxland/lynx/contrib/watermill-kafka"
 	// lagMetricName 是 consumer lag 指标名（高水位 - 已提交 offset，单位：条）。
 	lagMetricName = "lynx.kafka.consumer.lag"
 )

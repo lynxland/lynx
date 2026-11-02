@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/lynxtest"
+	"github.com/lynxland/lynx/lynxtest"
 	"github.com/robfig/cron/v3"
 )
 

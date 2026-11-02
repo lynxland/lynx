@@ -1,17 +1,17 @@
-module github.com/lynx-go/lynx/contrib/watermill-kafka
+module github.com/lynxland/lynx/contrib/watermill-kafka
 
 go 1.26.5
 
-replace github.com/lynx-go/lynx => ../../
+replace github.com/lynxland/lynx => ../../
 
-replace github.com/lynx-go/lynx/contrib/watermill => ../watermill
+replace github.com/lynxland/lynx/contrib/watermill => ../watermill
 
 require (
 	github.com/IBM/sarama v1.43.3
 	github.com/ThreeDotsLabs/watermill v1.5.2
 	github.com/ThreeDotsLabs/watermill-kafka/v3 v3.1.0
-	github.com/lynx-go/lynx v1.20.0
-	github.com/lynx-go/lynx/contrib/watermill v1.20.0
+	github.com/lynxland/lynx v1.20.0
+	github.com/lynxland/lynx/contrib/watermill v1.20.0
 	github.com/spf13/viper v1.21.0
 	github.com/testcontainers/testcontainers-go v0.44.0
 	github.com/testcontainers/testcontainers-go/modules/kafka v0.44.0

@@ -1,6 +1,6 @@
 # watermill-kafka
 
-模块：`github.com/lynx-go/lynx/contrib/watermill-kafka`（独立 Go module；包名 `kafka`，建议 `import wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"`，见 `transport.go:4`）
+模块：`github.com/lynxland/lynx/contrib/watermill-kafka`（独立 Go module；包名 `kafka`，建议 `import wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"`，见 `transport.go:4`）
 
 Kafka 的 `eventbus.Transport`：按逻辑 topic 配置集群、物理主题与消费/发布参数，配合 [contrib/watermill](../watermill/README.md) 的 Bus 实现跨进程事件投递。
 
@@ -25,8 +25,8 @@ Kafka 的 `eventbus.Transport`：按逻辑 topic 配置集群、物理主题与�
 package main
 
 import (
-	"github.com/lynx-go/lynx"
-	wmkafka "github.com/lynx-go/lynx/contrib/watermill-kafka"
+	"github.com/lynxland/lynx"
+	wmkafka "github.com/lynxland/lynx/contrib/watermill-kafka"
 )
 
 func main() {
@@ -87,8 +87,8 @@ kafka:
 `NewBusFromConfig` 固定组合 `"memory"` + `"kafka"` 两个 transport；需要额外后端或替换 memory 时手工组装（`kafka:` 段缺失时 `NewFromConfig` 返回 `(nil, nil)`，此时不加入 transports、不注册）：
 
 ```go
-// import: lynx "github.com/lynx-go/lynx"、watermill、wmkafka、
-// "github.com/lynx-go/lynx/eventbus"
+// import: lynx "github.com/lynxland/lynx"、watermill、wmkafka、
+// "github.com/lynxland/lynx/eventbus"
 func busFromConfig(cfg lynx.Config) (eventbus.Bus, []lynx.Service, error) {
 	kafkaT, err := wmkafka.NewFromConfig(cfg)
 	if err != nil {

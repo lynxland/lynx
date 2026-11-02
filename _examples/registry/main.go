@@ -8,10 +8,10 @@ import (
 	gohttp "net/http"
 	"time"
 
-	"github.com/lynx-go/lynx"
-	clienthttp "github.com/lynx-go/lynx/client/http"
-	"github.com/lynx-go/lynx/contrib/registry"
-	"github.com/lynx-go/lynx/server/http"
+	"github.com/lynxland/lynx"
+	clienthttp "github.com/lynxland/lynx/client/http"
+	"github.com/lynxland/lynx/contrib/registry"
+	"github.com/lynxland/lynx/server/http"
 	"github.com/spf13/pflag"
 )
 

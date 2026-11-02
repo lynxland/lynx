@@ -3,7 +3,7 @@ package grpc
 import (
 	"context"
 
-	"github.com/lynx-go/lynx/internal/serverkit"
+	"github.com/lynxland/lynx/internal/serverkit"
 )
 
 // RequestIDHeader / UserIDHeader 是 request_id / user_id 的 gRPC metadata

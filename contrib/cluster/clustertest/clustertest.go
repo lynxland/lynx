@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lynx-go/lynx/contrib/cluster"
+	"github.com/lynxland/lynx/contrib/cluster"
 )
 
 // CoordinatorFactory 每次调用返回一个全新 Coordinator（清理由 t.Cleanup 负责）。
