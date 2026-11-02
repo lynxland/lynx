@@ -21,9 +21,10 @@
   在那之前存量用户维持旧路径（GitHub redirect 长期有效）。
 - **`lynx-go/commands` 另行处理**：commands 仓库已随机构更名
   （`github.com/lynxland/commands`），但其 Go 模块路径在新版发布前仍为
-  `github.com/lynx-go/commands`——本仓库 `_examples` 的 require 与导入暂留
-  旧路径，待 commands 以新路径发版后随批迁移；`docs/02-quick-start.md` 的
-  仓库链接已指向新地址。
+  `github.com/lynx-go/commands`——本版发布时 `_examples` 的 require 与导入
+  暂留旧路径（旧路径经 GitHub redirect 长期可解析）；commands 以新路径发版
+  v0.4.0 后，`_examples` 已随批迁至 `github.com/lynxland/commands v0.4.0`
+  （后续提交）；`docs/02-quick-start.md` 的仓库链接已指向新地址。
 - 本仓库内代码、测试、活文档（README/CLAUDE/RELEASE/docs 0x/contrib README）
   与 12 份 LICENSE 版权行已同步；历史发布条目与设计决策记录
   （`docs/design-*.md`）按既定政策保留旧名不改。

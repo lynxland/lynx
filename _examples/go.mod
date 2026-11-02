@@ -16,7 +16,7 @@ replace (
 
 require (
 	github.com/google/wire v0.7.0
-	github.com/lynx-go/commands v0.2.1
+	github.com/lynxland/commands v0.4.0
 	github.com/lynxland/lynx v1.21.0
 	github.com/lynxland/lynx/contrib/registry v1.21.0
 	github.com/lynxland/lynx/contrib/registry-redis v1.21.0
